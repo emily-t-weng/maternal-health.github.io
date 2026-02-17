@@ -1,0 +1,632 @@
+const PAPERS_DATA = {
+  "last_updated": "2026-02-17 19:48:44 UTC",
+  "query": "all:\"maternal health\" OR all:\"maternal mortality\" OR all:\"maternal morbidity\" OR all:\"pregnancy outcome\" OR all:\"prenatal care\" OR all:\"antenatal care\" OR all:\"obstetric\" OR all:\"preeclampsia\" OR all:\"gestational diabetes\" OR all:\"postpartum\" OR all:\"perinatal\" OR all:\"neonatal mortality\" OR all:\"cesarean\" OR all:\"preterm birth\" OR all:\"fetal health\" OR all:\"endometriosis\" OR all:\"postpartum depression\"",
+  "papers": [
+    {
+      "title": "Unsupervised Anomaly Detection of Diseases in the Female Pelvis for Real-Time MR Imaging",
+      "authors": [
+        "Anika Knupfer",
+        "Johanna P. Müller",
+        "Jordina A. Verdera",
+        "Martin Fenske",
+        "Claudius S. Mathy",
+        "Smiti Tripathy",
+        "Sebastian Arndt",
+        "Matthias May",
+        "Michael Uder",
+        "Matthias W. Beckmann",
+        "Stefanie Burghaus",
+        "Jana Hutter"
+      ],
+      "abstract": "Pelvic diseases in women of reproductive age represent a major global health burden, with diagnosis frequently delayed due to high anatomical variability, complicating MRI interpretation. Existing AI approaches are largely disease-specific and lack real-time compatibility, limiting generalizability and clinical integration. To address these challenges, we establish a benchmark framework for disease- and parameter-agnostic, real-time-compatible unsupervised anomaly detection in pelvic MRI. The method uses a residual variational autoencoder trained exclusively on healthy sagittal T2-weighted scans acquired across diverse imaging protocols to model normal pelvic anatomy. During inference, reconstruction error heatmaps indicate deviations from learned healthy structure, enabling detection of pathological regions without labeled abnormal data. The model is trained on 294 healthy scans and augmented with diffusion-generated synthetic data to improve robustness. Quantitative evaluation on the publicly available Uterine Myoma MRI Dataset yields an average area-under-the-curve (AUC) value of 0.736, with 0.828 sensitivity and 0.692 specificity. Additional inter-observer clinical evaluation extends analysis to endometrial cancer, endometriosis, and adenomyosis, revealing the influence of anatomical heterogeneity and inter-observer variability on performance interpretation. With a reconstruction time of approximately 92.6 frames per second, the proposed framework establishes a baseline for unsupervised anomaly detection in the female pelvis and supports future integration into real-time MRI. Code is available upon request (https://github.com/AniKnu/UADPelvis), prospective data sets are available for academic collaboration.",
+      "published": "2026-02-05T20:33:27Z",
+      "abstract_url": "http://arxiv.org/abs/2602.06179v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.06179v1",
+      "categories": [
+        "cs.CV"
+      ]
+    },
+    {
+      "title": "Tracing the Genetic Footprints of the UK National Health Service",
+      "authors": [
+        "Nicolau Martin-Bassols",
+        "Pietro Biroli",
+        "Elisabetta De Cao",
+        "Massimo Anelli",
+        "Stephanie von Hinke",
+        "Silvia Mendolia"
+      ],
+      "abstract": "The establishment of the UK National Health Service (NHS) in July 1948 was one of the most consequential health policy interventions of the twentieth century, providing universal and free access to medical care and substantially expanding maternal and infant health services. In this paper, we estimate the causal effect of the NHS introduction on early-life mortality and we test whether survival is selective. We adopt a regression discontinuity design under local randomization, comparing individuals born just before and just after July 1948. Leveraging newly digitized weekly death records, we document a significant decline in stillbirths and infant mortality following the introduction of the NHS, the latter driven primarily by reductions in deaths from congenital conditions and diarrhea. We then use polygenic indexes (PGIs), fixed at conception, to track changes in population composition, showing that cohorts born at or after the NHS introduction exhibit higher PGIs associated with contextually-adverse traits (e.g., depression, COPD, and preterm birth) and lower PGIs associated with contextually-valued traits (e.g., educational attainment, self-rated health, and pregnancy length), with effect sizes as large as 7.5% of a standard deviation. These results based on the UK Biobank data are robust to family-based designs and replicate in the English Longitudinal Study of Ageing and the UK Household Longitudinal Study. Effects are strongest in socioeconomically disadvantaged areas and among males. This novel evidence on the existence and magnitude of selective survival highlights how large-scale public policies can leave a persistent imprint on population composition and generate long-term survival biases.",
+      "published": "2026-02-03T17:14:38Z",
+      "abstract_url": "http://arxiv.org/abs/2602.03751v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.03751v1",
+      "categories": [
+        "econ.GN"
+      ]
+    },
+    {
+      "title": "Prenatal Stress Detection from Electrocardiography Using Self-Supervised Deep Learning: Development and External Validation",
+      "authors": [
+        "Martin G. Frasch",
+        "Marlene J. E. Mayer",
+        "Clara Becker",
+        "Peter Zimmermann",
+        "Camilla Zelgert",
+        "Marta C. Antonelli",
+        "Silvia M. Lobmaier"
+      ],
+      "abstract": "Prenatal psychological stress affects 15-25% of pregnancies and increases risks of preterm birth, low birth weight, and adverse neurodevelopmental outcomes. Current screening relies on subjective questionnaires (PSS-10), limiting continuous monitoring. We developed deep learning models for stress detection from electrocardiography (ECG) using the FELICITy 1 cohort (151 pregnant women, 32-38 weeks gestation). A ResNet-34 encoder was pretrained via SimCLR contrastive learning on 40,692 ECG segments per subject. Multi-layer feature extraction enabled binary classification and continuous PSS prediction across maternal (mECG), fetal (fECG), and abdominal ECG (aECG). External validation used the FELICITy 2 RCT (28 subjects, different ECG device, yoga intervention vs. control). On FELICITy 1 (5-fold CV): mECG 98.6% accuracy (R2=0.88, MAE=1.90), fECG 99.8% (R2=0.95, MAE=1.19), aECG 95.5% (R2=0.75, MAE=2.80). External validation on FELICITy 2: mECG 77.3% accuracy (R2=0.62, MAE=3.54, AUC=0.826), aECG 63.6% (R2=0.29, AUC=0.705). Signal quality-based channel selection outperformed all-channel averaging (+12% R2 improvement). Mixed-effects models detected a significant intervention response (p=0.041). Self-supervised deep learning on pregnancy ECG enables accurate, objective stress assessment, with multi-layer feature extraction substantially outperforming single embedding approaches.",
+      "published": "2026-02-03T03:51:13Z",
+      "abstract_url": "http://arxiv.org/abs/2602.03886v2",
+      "pdf_url": "https://arxiv.org/pdf/2602.03886v2",
+      "categories": [
+        "q-bio.QM",
+        "cs.LG"
+      ]
+    },
+    {
+      "title": "Augmenting Clinical Decision-Making with an Interactive and Interpretable AI Copilot: A Real-World User Study with Clinicians in Nephrology and Obstetrics",
+      "authors": [
+        "Yinghao Zhu",
+        "Dehao Sui",
+        "Zixiang Wang",
+        "Xuning Hu",
+        "Lei Gu",
+        "Yifan Qi",
+        "Tianchen Wu",
+        "Ling Wang",
+        "Yuan Wei",
+        "Wen Tang",
+        "Zhihan Cui",
+        "Yasha Wang",
+        "Lequan Yu",
+        "Ewen M Harrison",
+        "Junyi Gao",
+        "Liantao Ma"
+      ],
+      "abstract": "Clinician skepticism toward opaque AI hinders adoption in high-stakes healthcare. We present AICare, an interactive and interpretable AI copilot for collaborative clinical decision-making. By analyzing longitudinal electronic health records, AICare grounds dynamic risk predictions in scrutable visualizations and LLM-driven diagnostic recommendations. Through a within-subjects counterbalanced study with 16 clinicians across nephrology and obstetrics, we comprehensively evaluated AICare using objective measures (task completion time and error rate), subjective assessments (NASA-TLX, SUS, and confidence ratings), and semi-structured interviews. Our findings indicate AICare's reduced cognitive workload. Beyond performance metrics, qualitative analysis reveals that trust is actively constructed through verification, with interaction strategies diverging by expertise: junior clinicians used the system as cognitive scaffolding to structure their analysis, while experts engaged in adversarial verification to challenge the AI's logic. This work offers design implications for creating AI systems that function as transparent partners, accommodating diverse reasoning styles to augment rather than replace clinical judgment.",
+      "published": "2026-01-31T13:41:32Z",
+      "abstract_url": "http://arxiv.org/abs/2602.00726v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.00726v1",
+      "categories": [
+        "cs.HC",
+        "cs.AI"
+      ]
+    },
+    {
+      "title": "EndoExtract: Co-Designing Structured Text Extraction from Endometriosis Ultrasound Reports",
+      "authors": [
+        "Haiyi Li",
+        "Yiyang Zhao",
+        "Yutong Li",
+        "Alison Deslandes",
+        "Jodie Avery",
+        "Mathew Leonardi",
+        "Mary Louise Hull",
+        "Hsiang-Ting Chen"
+      ],
+      "abstract": "Endometriosis ultrasound reports are often unstructured free-text documents that require manual abstraction for downstream tasks such as analytics, machine learning model training, and clinical auditing. We present \\textbf{EndoExtract}, an on-premise LLM-powered system that extracts structured data from these reports and surfaces interpretive fields for human review. Through contextual inquiry with research assistants, we identified key workflow pain points: asymmetric trust between numerical and interpretive fields, repetitive manual highlighting, fatigue from sustained comparison, and terminology inconsistency across radiologists. These findings informed an interface that surfaces only interpretive fields for mandatory review, automatically highlights source evidence within PDFs, and separates batch extraction from human-paced verification. A formative workshop revealed that \\textbf{EndoExtract} supports a shift from field-by-field data entry to supervisory validation, though participants noted risks of over-skimming and challenges in managing missing data.",
+      "published": "2026-01-26T05:17:32Z",
+      "abstract_url": "http://arxiv.org/abs/2601.18154v3",
+      "pdf_url": "https://arxiv.org/pdf/2601.18154v3",
+      "categories": [
+        "cs.HC"
+      ]
+    },
+    {
+      "title": "FUGC: Benchmarking Semi-Supervised Learning Methods for Cervical Segmentation",
+      "authors": [
+        "Jieyun Bai",
+        "Yitong Tang",
+        "Zihao Zhou",
+        "Mahdi Islam",
+        "Musarrat Tabassum",
+        "Enrique Almar-Munoz",
+        "Hongyu Liu",
+        "Hui Meng",
+        "Nianjiang Lv",
+        "Bo Deng",
+        "Yu Chen",
+        "Zilun Peng",
+        "Yusong Xiao",
+        "Li Xiao",
+        "Nam-Khanh Tran",
+        "Dac-Phu Phan-Le",
+        "Hai-Dang Nguyen",
+        "Xiao Liu",
+        "Jiale Hu",
+        "Mingxu Huang",
+        "Jitao Liang",
+        "Chaolu Feng",
+        "Xuezhi Zhang",
+        "Lyuyang Tong",
+        "Bo Du",
+        "Ha-Hieu Pham",
+        "Thanh-Huy Nguyen",
+        "Min Xu",
+        "Juntao Jiang",
+        "Jiangning Zhang",
+        "Yong Liu",
+        "Md. Kamrul Hasan",
+        "Jie Gan",
+        "Zhuonan Liang",
+        "Weidong Cai",
+        "Yuxin Huang",
+        "Gongning Luo",
+        "Mohammad Yaqub",
+        "Karim Lekadir"
+      ],
+      "abstract": "Accurate segmentation of cervical structures in transvaginal ultrasound (TVS) is critical for assessing the risk of spontaneous preterm birth (PTB), yet the scarcity of labeled data limits the performance of supervised learning approaches. This paper introduces the Fetal Ultrasound Grand Challenge (FUGC), the first benchmark for semi-supervised learning in cervical segmentation, hosted at ISBI 2025. FUGC provides a dataset of 890 TVS images, including 500 training images, 90 validation images, and 300 test images. Methods were evaluated using the Dice Similarity Coefficient (DSC), Hausdorff Distance (HD), and runtime (RT), with a weighted combination of 0.4/0.4/0.2. The challenge attracted 10 teams with 82 participants submitting innovative solutions. The best-performing methods for each individual metric achieved 90.26\\% mDSC, 38.88 mHD, and 32.85 ms RT, respectively. FUGC establishes a standardized benchmark for cervical segmentation, demonstrates the efficacy of semi-supervised methods with limited labeled data, and provides a foundation for AI-assisted clinical PTB risk assessment.",
+      "published": "2026-01-22T01:34:39Z",
+      "abstract_url": "http://arxiv.org/abs/2601.15572v1",
+      "pdf_url": "https://arxiv.org/pdf/2601.15572v1",
+      "categories": [
+        "eess.IV",
+        "cs.CE",
+        "cs.CV"
+      ]
+    },
+    {
+      "title": "Investigating cerebral anomalies in preterm infants and associated risk factors with magnetic resonance imaging at term-equivalent age",
+      "authors": [
+        "Nicolas Elbaz",
+        "Valérie Biran",
+        "Chloé Ghozland",
+        "Laurie Devisscher",
+        "Aline Gonzalez Carpinteiro",
+        "Aurélie Bourmaud",
+        "Monique Elmaleh-Bergès",
+        "Lucie Hertz-Pannier",
+        "Yann Leprince",
+        "Alice Frérot",
+        "Alice Héneau",
+        "Jessica Dubois",
+        "Marianne Alison"
+      ],
+      "abstract": "Background: Being born very or extreme preterm is a major source of cerebral anomalies and neurodevelopmental disorders, whose occurrence depends on many perinatal factors. A better understanding of these factors could be provided by cerebral Magnetic Resonance Imaging (MRI) at term-equivalent age (TEA). Objective: To investigate, through cerebral TEA-MRIs, the relationship between the main perinatal factors, the occurrence of cerebral anomalies, and cerebral volumetry. Methods: We assembled a cohort of preterm babies born before 32 weeks of gestation who underwent a cerebral TEA-MRI. We assessed cerebral anomalies using a radiological scoring system -- the Kidokoro scoring -- and performed cerebral volumetry. We investigated the relationships between 9 clinical factors (birth characteristics, resuscitation treatments{\\ldots}), Kidokoro scores, and brain volumes. Results: Among 110 preterms who underwent a cerebral MRI at TEA, only 6% suffered moderate-to-severe brain anomalies. We identified mechanical ventilation as a risk factor for cerebral anomalies (adjusted Odds-Ratio aOR = 4.6, 95% Confidence Interval CI [1.7-12.8]) and prolonged parenteral nutrition as a protective factor for white matter anomalies (aOR = 0.2, 95%CI [0.1-0.8]). Mechanical ventilation (p = 0.01) and being born small for gestational age (p < 0.001) were risk factors for the reduction of cerebral volumes. An increase in brain lesion severity was associated with decreased cerebral volumes (p = 0.016). Conclusion: Our study highlights the importance of treatment-related perinatal factors on the occurrence of cerebral anomalies in very and extreme preterms, and the interest in using both qualitative (Kidokoro scoring) and quantitative (volumetry) MRI-tools.",
+      "published": "2026-01-19T09:33:14Z",
+      "abstract_url": "http://arxiv.org/abs/2601.14313v1",
+      "pdf_url": "https://arxiv.org/pdf/2601.14313v1",
+      "categories": [
+        "q-bio.NC"
+      ]
+    },
+    {
+      "title": "Deep learning-based neurodevelopmental assessment in preterm infants",
+      "authors": [
+        "Lexin Ren",
+        "Jiamiao Lu",
+        "Weichuan Zhang",
+        "Benqing Wu",
+        "Tuo Wang",
+        "Yi Liao",
+        "Jiapan Guo",
+        "Changming Sun",
+        "Liang Guo"
+      ],
+      "abstract": "Preterm infants (born between 28 and 37 weeks of gestation) face elevated risks of neurodevelopmental delays, making early identification crucial for timely intervention. While deep learning-based volumetric segmentation of brain MRI scans offers a promising avenue for assessing neonatal neurodevelopment, achieving accurate segmentation of white matter (WM) and gray matter (GM) in preterm infants remains challenging due to their comparable signal intensities (isointense appearance) on MRI during early brain development. To address this, we propose a novel segmentation neural network, named Hierarchical Dense Attention Network. Our architecture incorporates a 3D spatial-channel attention mechanism combined with an attention-guided dense upsampling strategy to enhance feature discrimination in low-contrast volumetric data. Quantitative experiments demonstrate that our method achieves superior segmentation performance compared to state-of-the-art baselines, effectively tackling the challenge of isointense tissue differentiation. Furthermore, application of our algorithm confirms that WM and GM volumes in preterm infants are significantly lower than those in term infants, providing additional imaging evidence of the neurodevelopmental delays associated with preterm birth. The code is available at: https://github.com/ICL-SUST/HDAN.",
+      "published": "2026-01-17T07:42:13Z",
+      "abstract_url": "http://arxiv.org/abs/2601.11944v1",
+      "pdf_url": "https://arxiv.org/pdf/2601.11944v1",
+      "categories": [
+        "cs.CV"
+      ]
+    },
+    {
+      "title": "Bayesian Meta-Analyses Could Be More: A Case Study in Trial of Labor After a Cesarean-section Outcomes and Complications",
+      "authors": [
+        "Ashley Klein",
+        "Edward Raff",
+        "Marcia DesJardin"
+      ],
+      "abstract": "The meta-analysis's utility is dependent on previous studies having accurately captured the variables of interest, but in medical studies, a key decision variable that impacts a physician's decisions was not captured. This results in an unknown effect size and unreliable conclusions. A Bayesian approach may allow analysis to determine if the claim of a positive effect is still warranted, and we build a Bayesian approach to this common medical scenario. To demonstrate its utility, we assist professional OBGYNs in evaluating Trial of Labor After a Cesarean-section (TOLAC) situations where few interventions are available for patients and find the support needed for physicians to advance patient care.",
+      "published": "2026-01-15T05:29:32Z",
+      "abstract_url": "http://arxiv.org/abs/2601.10089v1",
+      "pdf_url": "https://arxiv.org/pdf/2601.10089v1",
+      "categories": [
+        "cs.LG"
+      ]
+    },
+    {
+      "title": "Who Fails Where? LLM and Human Error Patterns in Endometriosis Ultrasound Report Extraction",
+      "authors": [
+        "Haiyi Li",
+        "Yutong Li",
+        "Yiheng Chi",
+        "Alison Deslandes",
+        "Mathew Leonardi",
+        "Shay Freger",
+        "Yuan Zhang",
+        "Jodie Avery",
+        "M. Louise Hull",
+        "Hsiang-Ting Chen"
+      ],
+      "abstract": "In this study, we evaluate a locally-deployed large-language model (LLM) to convert unstructured endometriosis transvaginal ultrasound (eTVUS) scan reports into structured data for imaging informatics workflows. Across 49 eTVUS reports, we compared three LLMs (7B/8B and a 20B-parameter model) against expert human extraction. The 20B model achieved a mean accuracy of 86.02%, substantially outperforming smaller models and confirming the importance of scale in handling complex clinical text. Crucially, we identified a highly complementary error profile: the LLM excelled at syntactic consistency (e.g., date/numeric formatting) where humans faltered, while human experts provided superior semantic and contextual interpretation. We also found that the LLM's semantic errors were fundamental limitations that could not be mitigated by simple prompt engineering. These findings strongly support a human-in-the-loop (HITL) workflow in which the on-premise LLM serves as a collaborative tool, not a full replacement. It automates routine structuring and flags potential human errors, enabling imaging specialists to focus on high-level semantic validation. We discuss implications for structured reporting and interactive AI systems in clinical practice.",
+      "published": "2026-01-14T00:46:51Z",
+      "abstract_url": "http://arxiv.org/abs/2601.09053v2",
+      "pdf_url": "https://arxiv.org/pdf/2601.09053v2",
+      "categories": [
+        "cs.HC"
+      ]
+    },
+    {
+      "title": "Bridging the Trust Gap: Clinician-Validated Hybrid Explainable AI for Maternal Health Risk Assessment in Bangladesh",
+      "authors": [
+        "Farjana Yesmin",
+        "Nusrat Shirmin",
+        "Suraiya Shabnam Bristy"
+      ],
+      "abstract": "While machine learning shows promise for maternal health risk prediction, clinical adoption in resource-constrained settings faces a critical barrier: lack of explainability and trust. This study presents a hybrid explainable AI (XAI) framework combining ante-hoc fuzzy logic with post-hoc SHAP explanations, validated through systematic clinician feedback. We developed a fuzzy-XGBoost model on 1,014 maternal health records, achieving 88.67% accuracy (ROC-AUC: 0.9703). A validation study with 14 healthcare professionals in Bangladesh revealed strong preference for hybrid explanations (71.4% across three clinical cases) with 54.8% expressing trust for clinical use. SHAP analysis identified healthcare access as the primary predictor, with the engineered fuzzy risk score ranking third, validating clinical knowledge integration (r=0.298). Clinicians valued integrated clinical parameters but identified critical gaps: obstetric history, gestational age, and connectivity barriers. This work demonstrates that combining interpretable fuzzy rules with feature importance explanations enhances both utility and trust, providing practical insights for XAI deployment in maternal healthcare.",
+      "published": "2026-01-10T16:12:38Z",
+      "abstract_url": "http://arxiv.org/abs/2601.07866v1",
+      "pdf_url": "https://arxiv.org/pdf/2601.07866v1",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "title": "Placenta Accreta Spectrum Detection using Multimodal Deep Learning",
+      "authors": [
+        "Sumaiya Ali",
+        "Areej Alhothali",
+        "Sameera Albasri",
+        "Ohoud Alzamzami",
+        "Ahmed Abduljabbar",
+        "Muhammad Alwazzan"
+      ],
+      "abstract": "Placenta Accreta Spectrum (PAS) is a life-threatening obstetric complication involving abnormal placental invasion into the uterine wall. Early and accurate prenatal diagnosis is essential to reduce maternal and neonatal risks. This study aimed to develop and validate a deep learning framework that enhances PAS detection by integrating multiple imaging modalities. A multimodal deep learning model was designed using an intermediate feature-level fusion architecture combining 3D Magnetic Resonance Imaging (MRI) and 2D Ultrasound (US) scans. Unimodal feature extractors, a 3D DenseNet121-Vision Transformer for MRI and a 2D ResNet50 for US, were selected after systematic comparative analysis. Curated datasets comprising 1,293 MRI and 1,143 US scans were used to train the unimodal models and paired samples of patient-matched MRI-US scans was isolated for multimodal model development and evaluation. On an independent test set, the multimodal fusion model achieved superior performance, with an accuracy of 92.5% and an Area Under the Receiver Operating Characteristic Curve (AUC) of 0.927, outperforming the MRI-only (82.5%, AUC 0.825) and US-only (87.5%, AUC 0.879) models. Integrating MRI and US features provides complementary diagnostic information, demonstrating strong potential to enhance prenatal risk assessment and improve patient outcomes.",
+      "published": "2025-12-31T23:55:56Z",
+      "abstract_url": "http://arxiv.org/abs/2601.00907v1",
+      "pdf_url": "https://arxiv.org/pdf/2601.00907v1",
+      "categories": [
+        "eess.IV",
+        "cs.AI",
+        "cs.CV",
+        "cs.LG"
+      ]
+    },
+    {
+      "title": "Somatosensory prediction in premature neonates: iatrogenic pain experience increases repetition suppression and deviance detection of innocuous stimuli in a tactile oddball protocol",
+      "authors": [
+        "Anne-Lise Marais",
+        "Victoria Dumont",
+        "Marie Anquetil",
+        "Arnaud Mortier",
+        "Anne-Sophie Trentesaux",
+        "Nadege Roche-Labarbe"
+      ],
+      "abstract": "Sensory prediction (SP) is a fundamental mechanism of perception that supports cognitive development. Atypical SP has been reported across multiple neurodevelopmental disorders (ND), suggesting it may constitute an early cross-syndromic marker. Premature birth is a major risk factor for ND, with risk increasing as gestational age (GA) at birth decreases. However, how perinatal risk factors shape the development of SP remains poorly understood. We do not know if untimely birth itself, or exposure to iatrogenic pain during neonatal intensive care, cause neurodevelopmental impairments. In this study, we first assessed whether SP can be detected in the brains of premature neonates at 35 weeks corrected GA using a tactile oddballomission paradigm with EEG. We then examined the effects of the degree of prematurity and of the exposure to painful care procedures on neural indices of SP. Results demonstrate the presence of repetition suppression (RS) and a mismatch response (MMR) to deviant stimuli in the contralateral somatosensory cortex of premature neonates. The amplitude of these SP proxies was significantly affected by the number of painful procedures experienced since birth, independently of the effect of GA at birth. Contrary to our initial hypothesis that greater neurodevelopmental risk would be associated with less mature SP, infants with higher exposure to pain exhibited more robust indices of SP. These findings suggest that increased ex utero experience, even painful, is associated with accelerated maturation of predictive somatosensory processing. Longitudinal follow-up of participants at age 2 will explore how these early markers relate to developmental outcomes.",
+      "published": "2025-12-29T08:42:37Z",
+      "abstract_url": "http://arxiv.org/abs/2512.23301v1",
+      "pdf_url": "https://arxiv.org/pdf/2512.23301v1",
+      "categories": [
+        "q-bio.NC"
+      ]
+    },
+    {
+      "title": "Data Augmentation for Classification of Negative Pregnancy Outcomes in Imbalanced Data",
+      "authors": [
+        "Md Badsha Biswas"
+      ],
+      "abstract": "Infant mortality remains a significant public health concern in the United States, with birth defects identified as a leading cause. Despite ongoing efforts to understand the causes of negative pregnancy outcomes like miscarriage, stillbirths, birth defects, and premature birth, there is still a need for more comprehensive research and strategies for intervention. This paper introduces a novel approach that uses publicly available social media data, especially from platforms like Twitter, to enhance current datasets for studying negative pregnancy outcomes through observational research. The inherent challenges in utilizing social media data, including imbalance, noise, and lack of structure, necessitate robust preprocessing techniques and data augmentation strategies. By constructing a natural language processing (NLP) pipeline, we aim to automatically identify women sharing their pregnancy experiences, categorizing them based on reported outcomes. Women reporting full gestation and normal birth weight will be classified as positive cases, while those reporting negative pregnancy outcomes will be identified as negative cases. Furthermore, this study offers potential applications in assessing the causal impact of specific interventions, treatments, or prenatal exposures on maternal and fetal health outcomes. Additionally, it provides a framework for future health studies involving pregnant cohorts and comparator groups. In a broader context, our research showcases the viability of social media data as an adjunctive resource in epidemiological investigations about pregnancy outcomes.",
+      "published": "2025-12-28T00:22:13Z",
+      "abstract_url": "http://arxiv.org/abs/2512.22732v1",
+      "pdf_url": "https://arxiv.org/pdf/2512.22732v1",
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "title": "Improved cystic hygroma detection from prenatal imaging using ultrasound-specific self-supervised representation learning",
+      "authors": [
+        "Youssef Megahed",
+        "Robin Ducharme",
+        "Inok Lee",
+        "Inbal Willner",
+        "Adrian D. C. Chan",
+        "Mark Walker",
+        "Steven Hawken"
+      ],
+      "abstract": "Cystic hygroma is a high-risk prenatal ultrasound finding that portends high rates of chromosomal abnormalities, structural malformations, and adverse pregnancy outcomes. Automated detection can increase reproducibility and support scalable early screening programs, but supervised deep learning methods are limited by small labelled datasets. This study assesses whether ultrasound-specific self-supervised pretraining can facilitate accurate, robust deep learning detection of cystic hygroma in first-trimester ultrasound images. We fine-tuned the Ultrasound Self-Supervised Foundation Model with Masked Autoencoding (USF-MAE), pretrained on over 370,000 unlabelled ultrasound images, for binary classification of normal controls and cystic hygroma cases used in this study. Performance was evaluated on the same curated ultrasound dataset, preprocessing pipeline, and 4-fold cross-validation protocol as for the DenseNet-169 baseline, using accuracy, sensitivity, specificity, and the area under the receiver operating characteristic curve (ROC-AUC). Model interpretability was analyzed qualitatively using Score-CAM visualizations. USF-MAE outperformed the DenseNet-169 baseline on all evaluation metrics. The proposed model yielded a mean accuracy of 0.96, sensitivity of 0.94, specificity of 0.98, and ROC-AUC of 0.98 compared to 0.93, 0.92, 0.94, and 0.94 for the DenseNet-169 baseline, respectively. Qualitative Score-CAM visualizations of model predictions demonstrated clinical relevance by highlighting expected regions in the fetal neck for both positive and negative cases. Paired statistical analysis using a Wilcoxon signed-rank test confirmed that performance improvements achieved by USF-MAE were statistically significant (p = 0.0057).",
+      "published": "2025-12-28T00:07:26Z",
+      "abstract_url": "http://arxiv.org/abs/2512.22730v2",
+      "pdf_url": "https://arxiv.org/pdf/2512.22730v2",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "eess.IV"
+      ]
+    },
+    {
+      "title": "FETAL-GAUGE: A Benchmark for Assessing Vision-Language Models in Fetal Ultrasound",
+      "authors": [
+        "Hussain Alasmawi",
+        "Numan Saeed",
+        "Mohammad Yaqub"
+      ],
+      "abstract": "The growing demand for prenatal ultrasound imaging has intensified a global shortage of trained sonographers, creating barriers to essential fetal health monitoring. Deep learning has the potential to enhance sonographers' efficiency and support the training of new practitioners. Vision-Language Models (VLMs) are particularly promising for ultrasound interpretation, as they can jointly process images and text to perform multiple clinical tasks within a single framework. However, despite the expansion of VLMs, no standardized benchmark exists to evaluate their performance in fetal ultrasound imaging. This gap is primarily due to the modality's challenging nature, operator dependency, and the limited public availability of datasets. To address this gap, we present Fetal-Gauge, the first and largest visual question answering benchmark specifically designed to evaluate VLMs across various fetal ultrasound tasks. Our benchmark comprises over 42,000 images and 93,000 question-answer pairs, spanning anatomical plane identification, visual grounding of anatomical structures, fetal orientation assessment, clinical view conformity, and clinical diagnosis. We systematically evaluate several state-of-the-art VLMs, including general-purpose and medical-specific models, and reveal a substantial performance gap: the best-performing model achieves only 55\\% accuracy, far below clinical requirements. Our analysis identifies critical limitations of current VLMs in fetal ultrasound interpretation, highlighting the urgent need for domain-adapted architectures and specialized training approaches. Fetal-Gauge establishes a rigorous foundation for advancing multimodal deep learning in prenatal care and provides a pathway toward addressing global healthcare accessibility challenges. Our benchmark will be publicly available once the paper gets accepted.",
+      "published": "2025-12-25T04:54:37Z",
+      "abstract_url": "http://arxiv.org/abs/2512.22278v1",
+      "pdf_url": "https://arxiv.org/pdf/2512.22278v1",
+      "categories": [
+        "cs.CV"
+      ]
+    },
+    {
+      "title": "Cross-Population White Matter Atlas Creation for Concurrent Mapping of Brain Connections in Neonates and Adults with Diffusion MRI Tractography",
+      "authors": [
+        "Wei Zhang",
+        "Yijie Li",
+        "Ruixi Zheng",
+        "Nir A. Sochen",
+        "Yuqian Chen",
+        "Leo R. Zekelman",
+        "Ofer Pasternak",
+        "Jarrett Rushmore",
+        "Yogesh Rathi",
+        "Nikos Makris",
+        "Lauren J. O'Donnell",
+        "Fan Zhang"
+      ],
+      "abstract": "Comparing white matter (WM) connections between adults and neonates using diffusion MRI (dMRI) can advance our understanding of typical brain development and potential biomarkers for neurological disorders. However, existing WM atlases are population-specific (adult or neonatal) and reside in separate spaces, preventing direct cross-population comparisons. A unified WM atlas spanning both neonates and adults is still lacking. In this study, we propose a neonatal/adult brain atlas (NABA), a WM tractography atlas built from dMRI data of both neonates and adults. NABA is constructed using a robust, data-driven fiber clustering pipeline, enabling group-wise WM atlasing across populations despite substantial anatomical variability. The atlas provides a standardized template for WM parcellation, allowing direct comparison of WM tracts between neonates and adults. Using NABA, we conduct four analyses: (1) evaluating the feasibility of joint WM mapping across populations, (2) characterizing WM development across neonatal ages relative to adults, (3) assessing sex-related differences in neonatal WM development, and (4) examining the effects of preterm birth. Our results show that NABA robustly identifies WM tracts in both populations. We observe rapid fractional anisotropy (FA) development in long-range association tracts, including the arcuate fasciculus and superior longitudinal fasciculus II, whereas intra-cerebellar tracts develop more slowly. Neonatal females exhibit faster overall FA development than males. Although preterm neonates show lower overall FA development rates, they demonstrate relatively higher FA growth in specific tracts, including the corticospinal tract, corona radiata-pontine pathway, and intracerebellar tracts. These findings demonstrate that NABA is a useful tool for investigating WM development across neonates and adults.",
+      "published": "2025-12-23T13:54:11Z",
+      "abstract_url": "http://arxiv.org/abs/2512.20370v1",
+      "pdf_url": "https://arxiv.org/pdf/2512.20370v1",
+      "categories": [
+        "cs.NE"
+      ]
+    },
+    {
+      "title": "Placenta Accreta Spectrum Detection Using an MRI-based Hybrid CNN-Transformer Model",
+      "authors": [
+        "Sumaiya Ali",
+        "Areej Alhothali",
+        "Ohoud Alzamzami",
+        "Sameera Albasri",
+        "Ahmed Abduljabbar",
+        "Muhammad Alwazzan"
+      ],
+      "abstract": "Placenta Accreta Spectrum (PAS) is a serious obstetric condition that can be challenging to diagnose with Magnetic Resonance Imaging (MRI) due to variability in radiologists' interpretations. To overcome this challenge, a hybrid 3D deep learning model for automated PAS detection from volumetric MRI scans is proposed in this study. The model integrates a 3D DenseNet121 to capture local features and a 3D Vision Transformer (ViT) to model global spatial context. It was developed and evaluated on a retrospective dataset of 1,133 MRI volumes. Multiple 3D deep learning architectures were also evaluated for comparison. On an independent test set, the DenseNet121-ViT model achieved the highest performance with a five-run average accuracy of 84.3%. These results highlight the strength of hybrid CNN-Transformer models as a computer-aided diagnosis tool. The model's performance demonstrates a clear potential to assist radiologists by providing a robust decision support to improve diagnostic consistency across interpretations, and ultimately enhance the accuracy and timeliness of PAS diagnosis.",
+      "published": "2025-12-21T02:59:47Z",
+      "abstract_url": "http://arxiv.org/abs/2512.18573v1",
+      "pdf_url": "https://arxiv.org/pdf/2512.18573v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "title": "A Women's Health Benchmark for Large Language Models",
+      "authors": [
+        "Victoria-Elisabeth Gruber",
+        "Razvan Marinescu",
+        "Diego Fajardo",
+        "Amin H. Nassar",
+        "Christopher Arkfeld",
+        "Alexandria Ludlow",
+        "Shama Patel",
+        "Mehrnoosh Samaei",
+        "Valerie Klug",
+        "Anna Huber",
+        "Marcel Gühner",
+        "Albert Botta i Orfila",
+        "Irene Lagoja",
+        "Kimya Tarr",
+        "Haleigh Larson",
+        "Mary Beth Howard"
+      ],
+      "abstract": "As large language models (LLMs) become primary sources of health information for millions, their accuracy in women's health remains critically unexamined. We introduce the Women's Health Benchmark (WHB), the first benchmark evaluating LLM performance specifically in women's health. Our benchmark comprises 96 rigorously validated model stumps covering five medical specialties (obstetrics and gynecology, emergency medicine, primary care, oncology, and neurology), three query types (patient query, clinician query, and evidence/policy query), and eight error types (dosage/medication errors, missing critical information, outdated guidelines/treatment recommendations, incorrect treatment advice, incorrect factual information, missing/incorrect differential diagnosis, missed urgency, and inappropriate recommendations). We evaluated 13 state-of-the-art LLMs and revealed alarming gaps: current models show approximately 60\\% failure rates on the women's health benchmark, with performance varying dramatically across specialties and error types. Notably, models universally struggle with \"missed urgency\" indicators, while newer models like GPT-5 show significant improvements in avoiding inappropriate recommendations. Our findings underscore that AI chatbots are not yet fully able of providing reliable advice in women's health.",
+      "published": "2025-12-18T19:44:28Z",
+      "abstract_url": "http://arxiv.org/abs/2512.17028v1",
+      "pdf_url": "https://arxiv.org/pdf/2512.17028v1",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "title": "Self-Supervised Ultrasound Representation Learning for Renal Anomaly Prediction in Prenatal Imaging",
+      "authors": [
+        "Youssef Megahed",
+        "Inok Lee",
+        "Robin Ducharme",
+        "Kevin Dick",
+        "Adrian D. C. Chan",
+        "Steven Hawken",
+        "Mark C. Walker"
+      ],
+      "abstract": "Prenatal ultrasound is the cornerstone for detecting congenital anomalies of the kidneys and urinary tract, but diagnosis is limited by operator dependence and suboptimal imaging conditions. We sought to assess the performance of a self-supervised ultrasound foundation model for automated fetal renal anomaly classification using a curated dataset of 969 two-dimensional ultrasound images. A pretrained Ultrasound Self-Supervised Foundation Model with Masked Autoencoding (USF-MAE) was fine-tuned for binary and multi-class classification of normal kidneys, urinary tract dilation, and multicystic dysplastic kidney. Models were compared with a DenseNet-169 convolutional baseline using cross-validation and an independent test set. USF-MAE consistently improved upon the baseline across all evaluation metrics in both binary and multi-class settings. USF-MAE achieved an improvement of about 1.87% (AUC) and 7.8% (F1-score) on the validation set, 2.32% (AUC) and 4.33% (F1-score) on the independent holdout test set. The largest gains were observed in the multi-class setting, where the improvement in AUC was 16.28% and 46.15% in F1-score. To facilitate model interpretability, Score-CAM visualizations were adapted for a transformer architecture and show that model predictions were informed by known, clinically relevant renal structures, including the renal pelvis in urinary tract dilation and cystic regions in multicystic dysplastic kidney. These results show that ultrasound-specific self-supervised learning can generate a useful representation as a foundation for downstream diagnostic tasks. The proposed framework offers a robust, interpretable approach to support the prenatal detection of renal anomalies and demonstrates the promise of foundation models in obstetric imaging.",
+      "published": "2025-12-15T15:28:02Z",
+      "abstract_url": "http://arxiv.org/abs/2512.13434v1",
+      "pdf_url": "https://arxiv.org/pdf/2512.13434v1",
+      "categories": [
+        "eess.IV",
+        "cs.CV"
+      ]
+    },
+    {
+      "title": "Weight Space Correlation Analysis: Quantifying Feature Utilization in Deep Learning Models",
+      "authors": [
+        "Chun Kit Wong",
+        "Paraskevas Pegios",
+        "Nina Weng",
+        "Emilie Pi Fogtmann Sejer",
+        "Martin Grønnebæk Tolsgaard",
+        "Anders Nymark Christensen",
+        "Aasa Feragen"
+      ],
+      "abstract": "Deep learning models in medical imaging are susceptible to shortcut learning, relying on confounding metadata (e.g., scanner model) that is often encoded in image embeddings. The crucial question is whether the model actively utilizes this encoded information for its final prediction. We introduce Weight Space Correlation Analysis, an interpretable methodology that quantifies feature utilization by measuring the alignment between the classification heads of a primary clinical task and auxiliary metadata tasks. We first validate our method by successfully detecting artificially induced shortcut learning. We then apply it to probe the feature utilization of an SA-SonoNet model trained for Spontaneous Preterm Birth (sPTB) prediction. Our analysis confirmed that while the embeddings contain substantial metadata, the sPTB classifier's weight vectors were highly correlated with clinically relevant factors (e.g., birth weight) but decoupled from clinically irrelevant acquisition factors (e.g. scanner). Our methodology provides a tool to verify model trustworthiness, demonstrating that, in the absence of induced bias, the clinical model selectively utilizes features related to the genuine clinical signal.",
+      "published": "2025-12-15T09:52:46Z",
+      "abstract_url": "http://arxiv.org/abs/2512.13144v2",
+      "pdf_url": "https://arxiv.org/pdf/2512.13144v2",
+      "categories": [
+        "cs.CV",
+        "cs.LG",
+        "eess.IV"
+      ]
+    },
+    {
+      "title": "System X: A Mobile Voice-Based AI System for EMR Generation and Clinical Decision Support in Low-Resource Maternal Healthcare",
+      "authors": [
+        "Maryam Mustafa",
+        "Umme Ammara",
+        "Amna Shahnawaz",
+        "Moaiz Abrar",
+        "Bakhtawar Ahtisham",
+        "Fozia Umber Qurashi",
+        "Mostafa Shahin",
+        "Beena Ahmed"
+      ],
+      "abstract": "We present the design, implementation, and in-situ deployment of a smartphone-based voice-enabled AI system for generating electronic medical records (EMRs) and clinical risk alerts in maternal healthcare settings. Targeted at low-resource environments such as Pakistan, the system integrates a fine-tuned, multilingual automatic speech recognition (ASR) model and a prompt-engineered large language model (LLM) to enable healthcare workers to engage naturally in Urdu, their native language, regardless of literacy or technical background. Through speech-based input and localized understanding, the system generates structured EMRs and flags critical maternal health risks. Over a seven-month deployment in a not-for-profit hospital, the system supported the creation of over 500 EMRs and flagged over 300 potential clinical risks. We evaluate the system's performance across speech recognition accuracy, EMR field-level correctness, and clinical relevance of AI-generated red flags. Our results demonstrate that speech based AI interfaces, can be effectively adapted to real-world healthcare settings, especially in low-resource settings, when combined with structured input design, contextual medical dictionaries, and clinician-in-the-loop feedback loops. We discuss generalizable design principles for deploying voice-based mobile healthcare AI support systems in linguistically and infrastructurally constrained settings.",
+      "published": "2025-12-13T08:38:04Z",
+      "abstract_url": "http://arxiv.org/abs/2512.12240v1",
+      "pdf_url": "https://arxiv.org/pdf/2512.12240v1",
+      "categories": [
+        "cs.HC"
+      ]
+    },
+    {
+      "title": "Script Gap: Evaluating LLM Triage on Indian Languages in Native vs Roman Scripts in a Real World Setting",
+      "authors": [
+        "Manurag Khullar",
+        "Utkarsh Desai",
+        "Poorva Malviya",
+        "Aman Dalmia",
+        "Zheyuan Ryan Shi"
+      ],
+      "abstract": "Large Language Models (LLMs) are increasingly deployed in high-stakes clinical applications in India. In many such settings, speakers of Indian languages frequently communicate using romanized text rather than native scripts, yet existing research rarely evaluates this orthographic variation using real-world data. We investigate how romanization impacts the reliability of LLMs in a critical domain: maternal and newborn healthcare triage. We benchmark leading LLMs on a real-world dataset of user-generated queries spanning five Indian languages and Nepali. Our results reveal consistent degradation in performance for romanized messages, with F1 scores trailing those of native scripts by 5-12 points. At our partner maternal health organization in India, this gap could cause nearly 2 million excess errors in triage. Crucially, this performance gap by scripts is not due to a failure in clinical reasoning. We demonstrate that LLMs often correctly infer the semantic intent of romanized queries. Nevertheless, their final classification outputs remain brittle in the presence of orthographic noise in romanized inputs. Our findings highlight a critical safety blind spot in LLM-based health systems: models that appear to understand romanized input may still fail to act on it reliably.",
+      "published": "2025-12-11T16:15:42Z",
+      "abstract_url": "http://arxiv.org/abs/2512.10780v1",
+      "pdf_url": "https://arxiv.org/pdf/2512.10780v1",
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ]
+    },
+    {
+      "title": "IyaCare: An Integrated AI-IoT-Blockchain Platform for Maternal Health in Resource-Constrained Settings",
+      "authors": [
+        "Oche D. Ankeli",
+        "Marvin M. Ogore"
+      ],
+      "abstract": "Maternal mortality in Sub-Saharan Africa remains critically high, accounting for 70% of global deaths despite representing only 17% of the world population. Current digital health interventions typically deploy artificial intelligence (AI), Internet of Things (IoT), and blockchain technologies in isolation, missing synergistic opportunities for transformative healthcare delivery. This paper presents IyaCare, a proof-of-concept integrated platform that combines predictive risk assessment, continuous vital sign monitoring, and secure health records management specifically designed for resource-constrained settings. We developed a web-based system with Next.js frontend, Firebase backend, Ethereum blockchain architecture, and XGBoost AI models trained on maternal health datasets. Our feasibility study demonstrates 85.2% accuracy in high-risk pregnancy prediction and validates blockchain data integrity, with key innovations including offline-first functionality and SMS-based communication for community health workers. While limitations include reliance on synthetic validation data and simulated healthcare environments, results confirm the technical feasibility and potential impact of converged digital health solutions. This work contributes a replicable architectural model for integrated maternal health platforms in low-resource settings, advancing progress toward SDG 3.1 targets.",
+      "published": "2025-12-08T09:20:58Z",
+      "abstract_url": "http://arxiv.org/abs/2512.07333v1",
+      "pdf_url": "https://arxiv.org/pdf/2512.07333v1",
+      "categories": [
+        "cs.CY"
+      ]
+    },
+    {
+      "title": "Cash Transfers in the Perinatal Period and Child Welfare System Involvement Among Infants: Evidence from the Rx Kids Program in Flint, Michigan",
+      "authors": [
+        "Sumit Agarwal",
+        "H. Luke Shaefer",
+        "Samiul Jubaed",
+        "William Schneider",
+        "Eric Finegood",
+        "Mona Hanna"
+      ],
+      "abstract": "Infants are most vulnerable to child maltreatment, which may be due in part to economic instability during the perinatal period. In 2024, Rx Kids was launched in Flint, Michigan, achieving near 100% aggregate take up and providing every expectant mother with unconditional cash transfers during pregnancy and infancy. Synthetic difference-in-differences was used to compare changes in allegations of maltreatment within the first six months of life in Flint before and after implementation of Rx Kids relative to the corresponding change in control cities without the program. In the three years prior to the implementation of Rx Kids, the proportion of infants with a maltreatment allegation within the first six months of life was 21.7% in Flint and 19.5% among control cities. After implementation of Rx Kids in 2024, the maltreatment allegation rate dropped to 15.5% in Flint, falling below the maltreatment allegation rate of 20.6% among the control cities. Rx Kids was associated with a statistically significant 7.0 percentage-point decrease in the maltreatment allegation rate (p = 0.021), corresponding to a 32% decrease relative to the pre-intervention period. There was a decrease in the rate of neglect-related, non-neglect-related, and substantiated allegations; these were directionally consistent with the primary outcome but not statistically significant. Results were robust to alternative model specifications. The Rx Kids prenatal and infant cash prescription program led to a significant reduction in allegations of maltreatment among infants. These findings provide important evidence about the role of economic stability in preventing child welfare system involvement.",
+      "published": "2025-11-24T17:31:10Z",
+      "abstract_url": "http://arxiv.org/abs/2511.19570v1",
+      "pdf_url": "https://arxiv.org/pdf/2511.19570v1",
+      "categories": [
+        "econ.GN"
+      ]
+    },
+    {
+      "title": "Medical Malice: A Dataset for Context-Aware Safety in Healthcare LLMs",
+      "authors": [
+        "Andrew Maranhão Ventura D'addario"
+      ],
+      "abstract": "The integration of Large Language Models (LLMs) into healthcare demands a safety paradigm rooted in \\textit{primum non nocere}. However, current alignment techniques rely on generic definitions of harm that fail to capture context-dependent violations, such as administrative fraud and clinical discrimination. To address this, we introduce Medical Malice: a dataset of 214,219 adversarial prompts calibrated to the regulatory and ethical complexities of the Brazilian Unified Health System (SUS). Crucially, the dataset includes the reasoning behind each violation, enabling models to internalize ethical boundaries rather than merely memorizing a fixed set of refusals. Using an unaligned agent (Grok-4) within a persona-driven pipeline, we synthesized high-fidelity threats across seven taxonomies, ranging from procurement manipulation and queue-jumping to obstetric violence. We discuss the ethical design of releasing these \"vulnerability signatures\" to correct the information asymmetry between malicious actors and AI developers. Ultimately, this work advocates for a shift from universal to context-aware safety, providing the necessary resources to immunize healthcare AI against the nuanced, systemic threats inherent to high-stakes medical environments -- vulnerabilities that represent the paramount risk to patient safety and the successful integration of AI in healthcare systems.",
+      "published": "2025-11-24T11:55:22Z",
+      "abstract_url": "http://arxiv.org/abs/2511.21757v1",
+      "pdf_url": "https://arxiv.org/pdf/2511.21757v1",
+      "categories": [
+        "cs.CY",
+        "cs.AI",
+        "cs.CL",
+        "cs.CR"
+      ]
+    },
+    {
+      "title": "Compact Multimodal Language Models as Robust OCR Alternatives for Noisy Textual Clinical Reports",
+      "authors": [
+        "Nikita Neveditsin",
+        "Pawan Lingras",
+        "Salil Patil",
+        "Swarup Patil",
+        "Vijay Mago"
+      ],
+      "abstract": "Digitization of medical records often relies on smartphone photographs of printed reports, producing images degraded by blur, shadows, and other noise. Conventional OCR systems, optimized for clean scans, perform poorly under such real-world conditions. This study evaluates compact multimodal language models as privacy-preserving alternatives for transcribing noisy clinical documents. Using obstetric ultrasound reports written in regionally inflected medical English common to Indian healthcare settings, we compare eight systems in terms of transcription accuracy, noise sensitivity, numeric accuracy, and computational efficiency. Compact multimodal models consistently outperform both classical and neural OCR pipelines. Despite higher computational costs, their robustness and linguistic adaptability position them as viable candidates for on-premises healthcare digitization.",
+      "published": "2025-11-17T15:58:03Z",
+      "abstract_url": "http://arxiv.org/abs/2511.13523v1",
+      "pdf_url": "https://arxiv.org/pdf/2511.13523v1",
+      "categories": [
+        "cs.IR"
+      ]
+    },
+    {
+      "title": "Robust Alignment of the Human Embryo in 3D Ultrasound using PCA and an Ensemble of Heuristic, Atlas-based and Learning-based Classifiers Evaluated on the Rotterdam Periconceptional Cohort",
+      "authors": [
+        "Nikolai Herrmann",
+        "Marcella C. Zijta",
+        "Stefan Klein",
+        "Régine P. M. Steegers-Theunissen",
+        "Rene M. H. Wijnen",
+        "Bernadette S. de Bakker",
+        "Melek Rousian",
+        "Wietske A. P. Bastiaansen"
+      ],
+      "abstract": "Standardized alignment of the embryo in three-dimensional (3D) ultrasound images aids prenatal growth monitoring by facilitating standard plane detection, improving visualization of landmarks and accentuating differences between different scans. In this work, we propose an automated method for standardizing this alignment. Given a segmentation mask of the embryo, Principal Component Analysis (PCA) is applied to the mask extracting the embryo's principal axes, from which four candidate orientations are derived. The candidate in standard orientation is selected using one of three strategies: a heuristic based on Pearson's correlation assessing shape, image matching to an atlas through normalized cross-correlation, and a Random Forest classifier. We tested our method on 2166 images longitudinally acquired 3D ultrasound scans from 1043 pregnancies from the Rotterdam Periconceptional Cohort, ranging from 7+0 to 12+6 weeks of gestational age. In 99.0% of images, PCA correctly extracted the principal axes of the embryo. The correct candidate was selected by the Pearson Heuristic, Atlas-based and Random Forest in 97.4%, 95.8%, and 98.4% of images, respectively. A Majority Vote of these selection methods resulted in an accuracy of 98.5%. The high accuracy of this pipeline enables consistent embryonic alignment in the first trimester, enabling scalable analysis in both clinical and research settings. The code is publicly available at: https://gitlab.com/radiology/prenatal-image-analysis/pca-3d-alignment.",
+      "published": "2025-11-05T12:30:11Z",
+      "abstract_url": "http://arxiv.org/abs/2511.03416v1",
+      "pdf_url": "https://arxiv.org/pdf/2511.03416v1",
+      "categories": [
+        "cs.CV"
+      ]
+    },
+    {
+      "title": "Bayesian Causal Effect Estimation for Categorical Data using Staged Tree Models",
+      "authors": [
+        "Andrea Cremaschi",
+        "Manuele Leonelli",
+        "Gherardo Varando"
+      ],
+      "abstract": "We propose a fully Bayesian approach for causal inference with multivariate categorical data based on staged tree models, a class of probabilistic graphical models capable of representing asymmetric and context-specific dependencies. To account for uncertainty in both structure and parameters, we introduce a flexible family of prior distributions over staged trees. These include product partition models to encourage parsimony, a novel distance-based prior to promote interpretable dependence patterns, and an extension that incorporates continuous covariates into the learning process. Posterior inference is achieved via a tailored Markov Chain Monte Carlo algorithm with split-and-merge moves, yielding posterior samples of staged trees from which average treatment effects and uncertainty measures are derived. Posterior summaries and uncertainty measures are obtained via techniques from the Bayesian nonparametrics literature. Two case studies on electronic fetal monitoring and cesarean delivery and on anthracycline therapy and cardiac dysfunction in breast cancer illustrate the methods.",
+      "published": "2025-11-05T12:07:55Z",
+      "abstract_url": "http://arxiv.org/abs/2511.03399v1",
+      "pdf_url": "https://arxiv.org/pdf/2511.03399v1",
+      "categories": [
+        "stat.ME"
+      ]
+    },
+    {
+      "title": "MvBody: Multi-View-Based Hybrid Transformer Using Optical 3D Body Scan for Explainable Cesarean Section Prediction",
+      "authors": [
+        "Ruting Cheng",
+        "Boyuan Feng",
+        "Yijiang Zheng",
+        "Chuhui Qiu",
+        "Aizierjiang Aiersilan",
+        "Joaquin A. Calderon",
+        "Wentao Zhao",
+        "Qing Pan",
+        "James K. Hahn"
+      ],
+      "abstract": "Accurately assessing the risk of cesarean section (CS) delivery is critical, especially in settings with limited medical resources, where access to healthcare is often restricted. Early and reliable risk prediction allows better-informed prenatal care decisions and can improve maternal and neonatal outcomes. However, most existing predictive models are tailored for in-hospital use during labor and rely on parameters that are often unavailable in resource-limited or home-based settings. In this study, we conduct a pilot investigation to examine the feasibility of using 3D body shape for CS risk assessment for future applications with more affordable general devices. We propose a novel multi-view-based Transformer network, MvBody, which predicts CS risk using only self-reported medical data and 3D optical body scans obtained between the 31st and 38th weeks of gestation. To enhance training efficiency and model generalizability in data-scarce environments, we incorporate a metric learning loss into the network. Compared to widely used machine learning models and the latest advanced 3D analysis methods, our method demonstrates superior performance, achieving an accuracy of 84.62% and an Area Under the Receiver Operating Characteristic Curve (AUC-ROC) of 0.724 on the independent test set. To improve transparency and trust in the model's predictions, we apply the Integrated Gradients algorithm to provide theoretically grounded explanations of the model's decision-making process. Our results indicate that pre-pregnancy weight, maternal age, obstetric history, previous CS history, and body shape, particularly around the head and shoulders, are key contributors to CS risk prediction.",
+      "published": "2025-11-05T06:02:48Z",
+      "abstract_url": "http://arxiv.org/abs/2511.03212v1",
+      "pdf_url": "https://arxiv.org/pdf/2511.03212v1",
+      "categories": [
+        "cs.CV"
+      ]
+    }
+  ]
+};
